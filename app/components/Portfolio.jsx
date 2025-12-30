@@ -22,7 +22,7 @@ export default function Portfolio() {
                         </div>
 
                         {/* Icons column (right side) */}
-                        <div className="flex flex-col gap-5 w-full md:pl-36">
+                        <div className="flex flex-col gap-5 w-full lg:pl-36">
                             <p className="text-gray-300">Some technologies I am working with:</p>
                             <div className="flex flex-wrap items-center gap-4 text-center">
                                 <a className="text-yellow-300 hover:text-white transition">
