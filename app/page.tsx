@@ -14,7 +14,7 @@ export default function Home() {
         {/* Hero section - main landing page */}
         <main className="mx-auto w-full max-w-3xl flex-1 flex flex-col items-center justify-between py-40 px-20 sm:items-start">
           <section className="h-screen flex-col items-start justify-center">
-            <p className="text-8xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+            <p className="text-8xl font-bold mb-6 bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               Amiir Hamzah
             </p>
             <p className="text-3xl text-gray-300 leading-relaxed max-w-2xl mb-10 pt-3">
