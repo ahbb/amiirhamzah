@@ -1,9 +1,14 @@
 import Image from "next/image";
 import Portfolio from './components/Portfolio';
 import Footer from './components/Footer';
+import Navbar from './components/Navbar';
 
 export default function Home() {
   return (
+    <div className="min-h-screen flex flex-col font-sans bg-zinc-50 dark:bg-black">
+      {/* Navbar section */}
+      <Navbar />
+
     <div className="min-h-screen flex flex-col font-sans bg-zinc-50 dark:bg-black">
       {/* Full-bleed portfolio section (dark background) */}
       <section className="w-full bg-gray-900 text-gray-100 flex-1">
@@ -18,6 +23,7 @@ export default function Home() {
           <Footer />
         </div>
       </div>
+    </div>
     </div>
   );
 }
