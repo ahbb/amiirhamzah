@@ -1,57 +1,86 @@
+import { FaFlutter } from "react-icons/fa6";
+import { SiPython, SiNextdotjs, SiMongodb, SiMysql } from 'react-icons/si';
+import { BiLogoSpringBoot } from "react-icons/bi";
+import { DiDjango } from "react-icons/di";
+
 export default function Portfolio() {
     return (
-        <div>
-            {/* Main container with padding and max width for better readability */}
-            <main className="max-w-4xl mx-auto px-6 py-10">
+        // main div to return
+        <div className="ml-70 max-w-fullflex-1 flex flex-col items-center justify-between py-32 px-16 sm:items-start pr-120">
+            {/* About section */}
+            <div>
+                <section id="about" className="min-h-screen py-10 scroll-mt-20">
+                    <h2 className="text-5xl font-bold mb-4 text-white">About</h2>
+                    <div className="flex items-start gap-30">
+                        <div className="pt-3">
+                            <p className="text-gray-300 leading-relaxed text-xl">
+                                Hi, I’m Amiir Hamzah, a technology enthusiast driven by a passion for building applications that create meaningful and positive impact. I enjoy developing digital solutions that simplify everyday processes, improve efficiency, and enhance the way people interact with technology.
+                            </p>
+                            <p className="text-gray-300 leading-relaxed py-5 text-xl">
+                                Beyond coding, I aim to maintain healthy lifestyle by regularly practicing calisthenics and running to stay fit. I also enjoy playing video games, for the immersive storytelling crafted by talented creators and to also fuel my competitive spirit.
+                            </p>
+                        </div>
 
-                {/* Hero section - full viewport height */}
-                <section className="h-screen flex-col items-start justify-center">
-                    <p className="text-6xl font-bold mb-6 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent pb-3">
-                        Amiir Hamzah
-                    </p>
-                    <p className="text-xl text-gray-300 leading-relaxed max-w-2xl mb-10">
-                        I am a software engineer specializing in building modern web and mobile applications. I enjoy transforming complex challenges into elegant and intuitive solutions.
-                    </p>
-
-                    {/* Button */}
-                    <a href="#about" className="px-6 py-3 border-2 border-blue-400 text-blue-400 rounded-lg hover:bg-blue-400 hover:text-gray-900 transition duration-300 font-semibold">
-                        View my work
-                    </a>
+                        {/* Icons column (right side) */}
+                        <div className="flex flex-col gap-5 text-right">
+                            Some technologies I am working with:
+                            <div className="flex items-center gap-8 pl-30 pb-5 pl-30 text-center">
+                                <a className="text-yellow-300 hover:text-white transition">
+                                    <DiDjango className="md:w-20 md:h-20" />
+                                </a>
+                                <a className="text-gray-300 hover:text-white transition">
+                                    <SiNextdotjs className="w-10 h-10 md:w-12 md:h-12" />
+                                    Next.js
+                                </a>
+                                <a className="hover:text-white transition">
+                                    <FaFlutter className="w-10 h-10 md:w-12 md:h-12" />
+                                    Flutter
+                                </a>
+                            </div>
+                            <div className="flex items-center gap-8 pl-30 text-center">
+                                <a className="text-green-400 hover:text-white transition">
+                                    <SiMongodb className="w-10 h-10 md:w-12 md:h-12" />
+                                    MongoDB
+                                </a>
+                                <a className="hover:text-white transition">
+                                    <SiMysql className="w-10 h-10 md:w-18 md:h-20" />
+                                </a>
+                                <a className="hover:text-white transition">
+                                    <BiLogoSpringBoot className="w-10 h-10 md:w-12 md:h-12" />
+                                    Spring Boot
+                                </a>
+                            </div>
+                            <div className="flex items-center gap-8 pl-30">
+                                
+                            </div>
+                        </div>
+                    </div>
                 </section>
+            </div>
 
-                {/* About section */}
-                <section id="about" className="min-h-screen py-20 scroll-mt-20">
-                    <h2 className="text-3xl font-bold mb-4 text-white">About</h2>
-                    <p className="text-gray-300 leading-relaxed">
-                        
-                    </p>
-                </section>
+            {/* Experience section */}
+            <section id="experience" className="mb-16 scroll-mt-20">
+                <h2 className="text-3xl font-bold mb-4 text-white">Experience</h2>
+                <p className="text-gray-300 leading-relaxed">
 
-                {/* Experience section */}
-                <section id="experience" className="mb-16 scroll-mt-20">
-                    <h2 className="text-3xl font-bold mb-4 text-white">Experience</h2>
-                    <p className="text-gray-300 leading-relaxed">
-                        
-                    </p>
-                </section>
+                </p>
+            </section>
 
-                {/* Projects section */}
-                <section id="projects" className="mb-16 scroll-mt-20">
-                    <h2 className="text-3xl font-bold mb-4 text-white">Projects</h2>
-                    <p className="text-gray-300 leading-relaxed">
-                        
-                    </p>
-                </section>
+            {/* Projects section */}
+            <section id="projects" className="mb-16 scroll-mt-20">
+                <h2 className="text-3xl font-bold mb-4 text-white">Projects</h2>
+                <p className="text-gray-300 leading-relaxed">
 
-                {/* Contact section */}
-                <section id="contact" className="mb-16 scroll-mt-20">
-                    <h2 className="text-3xl font-bold mb-4 text-white">Contact</h2>
-                    <p className="text-gray-300 leading-relaxed">
-                        
-                    </p>
-                </section>
+                </p>
+            </section>
 
-            </main>
+            {/* Contact section */}
+            <section id="contact" className="mb-16 scroll-mt-20">
+                <h2 className="text-3xl font-bold mb-4 text-white">Contact</h2>
+                <p className="text-gray-300 leading-relaxed">
+
+                </p>
+            </section>
         </div>
     );
 }
