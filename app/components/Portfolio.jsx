@@ -17,7 +17,7 @@ export default function Portfolio() {
                                 Hi, I’m Amiir Hamzah, a technology enthusiast driven by a passion for building applications that create meaningful and positive impact. I enjoy developing digital solutions that simplify everyday processes, improve efficiency, and enhance the way people interact with technology.
                             </p>
                             <p className="text-gray-300 leading-relaxed py-5 text-xl">
-                                Beyond coding, I aim to maintain healthy lifestyle by regularly practicing calisthenics and running to stay fit. I also enjoy playing video games, for the immersive storytelling crafted by talented creators and to also fuel my competitive spirit.
+                                Beyond coding, I aim to maintain a healthy lifestyle by regularly practicing calisthenics and running to stay fit. I also enjoy playing video games, for the immersive storytelling crafted by talented creators and to fuel my competitive spirit.
                             </p>
                         </div>
 
