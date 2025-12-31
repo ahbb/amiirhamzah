@@ -9,19 +9,19 @@ export default function About() {
       {/* About section */}
       <div className="w-full">
         <section id="about" className="scroll-mt-20">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-white">
+          <h2 className="text-3xl font-bold mb-4 text-white">
             About
           </h2>
           <div className="flex flex-col lg:flex-row items-start gap-6 lg:gap-16">
             <div className="pt-3">
-              <p className="text-gray-300 leading-relaxed text-xl">
+              <p className="text-gray-300 leading-relaxed text-lg">
                 Hi, I’m Amiir Hamzah, a technology enthusiast driven by a
                 passion for building applications that create meaningful and
                 positive impact. I enjoy developing digital solutions that
                 simplify everyday processes, improve efficiency, and enhance the
                 way people interact with technology.
               </p>
-              <p className="text-gray-300 leading-relaxed py-5 text-xl">
+              <p className="text-gray-300 leading-relaxed py-5 text-lg">
                 Beyond coding, I aim to maintain a healthy lifestyle by
                 regularly practicing calisthenics and running to stay fit. I
                 also enjoy playing video games, for the immersive storytelling
