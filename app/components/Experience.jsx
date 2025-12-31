@@ -7,16 +7,16 @@ const experiences = [
     company: "uParcel",
     role: "Software Engineer Intern",
     duration: "Aug 2023 - Apr 2024",
-    bullets: [
-      "Involved in integration of Singpass MyInfo API into the uParcel mobile application to streamline the signup process for uParcel delivery agents, using Flutter Dart, Python Django and PostgreSQL",
+    details: [
+      "Involved in integration of Singpass MyInfo API into the uParcel mobile application to streamline the signup process for uParcel delivery agents, using Flutter, Python Django and PostgreSQL",
       "Supported integration of Whatsapp API into the uParcel ecosystem to replace SMS with Whatsapp delivery notifications, using AWS Lambda",
     ],
   },
   {
     company: "ST Engineering",
     role: "Software Engineer Intern",
-    duration: "Sep 2018 - Nov 2024",
-    bullets: [
+    duration: "Sep 2018 - Nov 2018",
+    details: [
       "Developed a full-stack web application using React JS, Spring Boot and MongoDB to manage users and track attendance records",
     ],
   },
@@ -73,10 +73,10 @@ export default function Experience() {
               </p>
 
               <ul className="space-y-4 text-slate-300">
-                {experiences[activeIndex].bullets.map((b, idx) => (
+                {experiences[activeIndex].details.map((d, idx) => (
                   <li key={idx} className="flex items-start gap-3">
                     <span className="mt-1 text-blue-400">▸</span>
-                    <p className="leading-relaxed">{b}</p>
+                    <p className="leading-relaxed">{d}</p>
                   </li>
                 ))}
               </ul>
