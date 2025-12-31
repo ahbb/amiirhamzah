@@ -17,7 +17,7 @@ const experiences = [
     role: "Software Engineer Intern",
     duration: "Sep 2018 - Nov 2018",
     details: [
-      "Developed a full-stack web application using React JS, Spring Boot and MongoDB to manage users and track attendance records",
+      "Involved in development of a full-stack web application using React JS, Spring Boot and MongoDB to manage users and track attendance records",
     ],
   },
 ];
@@ -26,7 +26,7 @@ export default function Experience() {
   const [activeIndex, setActiveIndex] = useState(0); // default to first experience
 
   return (
-    <div className="max-w-full flex-1 flex flex-col items-center justify-between py-16 px-4 sm:px-8 lg:px-28">
+    <div className="max-w-full flex-1 flex flex-col items-center justify-between pb-48 px-4 lg:px-72">
       <section id="experience" className="w-full mb-16 scroll-mt-20">
         <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-white">
           Experience
@@ -41,7 +41,7 @@ export default function Experience() {
                   <li key={exp.company} className="relative">
                     <button
                       onClick={() => setActiveIndex(i)}
-                      className={`w-full text-left px-4 py-3 -ml-px transition flex items-center gap-3
+                      className={`w-full text-left px-4 py-3 -ml-px transition flex items-center
                       ${
                         isActive
                           ? "bg-slate-900 text-blue-400 border-l-4 border-blue-400"
@@ -50,7 +50,7 @@ export default function Experience() {
                       `}
                       aria-current={isActive ? "true" : undefined}
                     >
-                      <span className="text-sm">{exp.company}</span>
+                      <span className="text-md">{exp.company}</span>
                     </button>
                   </li>
                 );
@@ -59,8 +59,7 @@ export default function Experience() {
           </nav>
 
           {/* Right details */}
-          <div className="flex-1">
-            <div className="pl-0 lg:pl-8 lg:px-40">
+          <div className="flex-1 lg:pl-4 lg:px-72">
               <h3 className="text-xl font-semibold text-white">
                 {experiences[activeIndex].role}{" "}
                 <span className="text-blue-400">
@@ -80,8 +79,6 @@ export default function Experience() {
                   </li>
                 ))}
               </ul>
-
-            </div>
           </div>
         </div>
       </section>

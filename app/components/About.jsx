@@ -5,8 +5,7 @@ import { DiDjango } from "react-icons/di";
 
 export default function About() {
   return (
-    // main div to return
-    <div className="max-w-full flex-1 flex flex-col items-center justify-between py-16 px-4 sm:px-8 lg:px-28">
+    <div className="max-w-full flex-1 flex flex-col items-center justify-between pb-48 px-4 lg:px-72">
       {/* About section */}
       <div className="w-full">
         <section id="about" className="scroll-mt-20">
