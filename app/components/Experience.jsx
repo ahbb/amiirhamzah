@@ -31,9 +31,9 @@ export default function Experience() {
         <h2 className="text-4xl sm:text-5xl font-bold mb-4 text-white">
           Experience
         </h2>
-        <div className="flex flex-col lg:flex-row gap-8 pt-3">
+        <div className="flex flex-col lg:flex-row gap-2 pt-3">
           {/* Left tabs */}
-          <nav className="w-full lg:w-64">
+          <nav className="w-full lg:w-1/6">
             <ul className="border-l border-slate-700">
               {experiences.map((exp, i) => {
                 const isActive = i === activeIndex;
@@ -60,7 +60,7 @@ export default function Experience() {
 
           {/* Right details */}
           <div className="flex-1">
-            <div className="pl-0 lg:pl-8">
+            <div className="pl-0 lg:pl-8 lg:px-40">
               <h3 className="text-xl font-semibold text-white">
                 {experiences[activeIndex].role}{" "}
                 <span className="text-blue-400">
