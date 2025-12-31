@@ -5,7 +5,7 @@ import { DiDjango } from "react-icons/di";
 
 export default function About() {
   return (
-    <div className="max-w-full flex-1 flex flex-col items-center justify-between pb-48 px-4 lg:px-72">
+    <div className="max-w-full flex-1 flex flex-col items-center justify-between pb-48 px-4 lg:px-96">
       {/* About section */}
       <div className="w-full">
         <section id="about" className="scroll-mt-20">
@@ -35,40 +35,42 @@ export default function About() {
                 Some technologies I am working with:
               </p>
               <div className="flex flex-wrap items-center gap-12 text-center justify-center">
-                <a className="text-yellow-300 hover:text-white transition">
-                  <DiDjango className="w-10 h-10 sm:w-16 sm:h-16 md:w-20 md:h-20" />
+                <a className="hover:text-white transition">
+                  <DiDjango className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14" />
                 </a>
                 <a className="hover:text-white transition">
-                  <SiNextdotjs className="w-10 h-10 sm:w-12 sm:h-12 md:w-12 md:h-12" />
+                  <SiNextdotjs className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14" />
                   <p className="text-sm mt-2">Next.js</p>
                 </a>
                 <a className="hover:text-white transition">
-                  <FaFlutter className="w-10 h-10 sm:w-12 sm:h-12 md:w-12 md:h-12" />
+                  <FaFlutter className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14" />
                   <p className="text-sm mt-2">Flutter</p>
                 </a>
+
               </div>
               <div className="flex flex-wrap items-center gap-12 text-center justify-center">
                 <a className="hover:text-white transition">
-                  <SiMongodb className="w-10 h-10 sm:w-12 sm:h-12 md:w-12 md:h-12" />
+                  <SiMongodb className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14" />
                   <p className="text-sm mt-2">MongoDB</p>
                 </a>
-                <a className="hover:text-white transition">
-                  <SiMysql className="w-10 h-10 sm:w-12 sm:h-12 md:w-18 md:h-20" />
-                </a>
-                <a className="hover:text-white transition">
-                  <BiLogoSpringBoot className="w-10 h-10 sm:w-12 sm:h-12 md:w-12 md:h-12" />
-                  <p className="text-sm mt-2">
-                    Spring <br />
-                    Boot
-                  </p>
-                </a>
-              </div>
-              <div className="flex flex-wrap items-center text-center justify-center">
                 <a className="hover:text-white transition">
                   <SiFastapi className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14" />
                   <p className="text-sm mt-2">Fast API</p>
                 </a>
+                <a className="hover:text-white transition">
+                  <BiLogoSpringBoot className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14" />
+                  <p className="text-sm mt-2">
+                    Spring Boot
+                  </p>
+                </a>
               </div>
+
+              <div className="flex flex-wrap items-center gap-12 text-center justify-center">
+                <a className="hover:text-white transition">
+                  <SiMysql className="w-10 h-10 sm:w-12 sm:h-12 md:w-14 md:h-14" />
+                </a>
+              </div>
+
             </div>
           </div>
         </section>

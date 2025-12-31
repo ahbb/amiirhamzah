@@ -11,7 +11,7 @@ export default function Home() {
 
       <section className="w-full bg-gray-900 text-gray-100 flex-1">
         {/* Hero section - main landing page */}
-        <main className="mx-auto w-full max-w-3xl flex-1 flex flex-col items-center justify-between px-4">
+        <main className="mx-auto w-full max-w-3xl items-center justify-between px-4">
           <section className="h-screen flex flex-col items-center justify-center text-center">
             <p className="text-7xl font-bold mb-6 bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
               Amiir Hamzah
