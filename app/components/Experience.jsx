@@ -29,8 +29,11 @@ export default function Experience() {
     <div className="max-w-full flex-1 flex flex-col items-center justify-between pb-48 px-4 lg:px-96">
       <section id="experience" className="w-full mb-16 scroll-mt-20">
         <h2 className="text-3xl font-bold mb-4 text-white">
-          Experience
+          Where I've Worked
         </h2>
+        <h3 className="text-md font-bold mb-4 text-blue-400">
+          <a href="/">View full resume</a>
+        </h3>
         <div className="flex flex-col lg:flex-row gap-2 pt-3">
           {/* Left tabs */}
           <nav className="w-full lg:w-1/6">
