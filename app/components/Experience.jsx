@@ -26,12 +26,12 @@ export default function Experience() {
   const [activeIndex, setActiveIndex] = useState(0); // default to first experience
 
   return (
-    <div className="mx-auto flex-1 flex flex-col items-center justify-between px-4 sm:px-6 lg:px-12 xl:px-24 pb-24 sm:pb-32 lg:pb-40">
-      <section id="experience" className="w-full max-w-7xl flex flex-col mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-bold mb-4 text-white">
+    <div className="mx-auto flex-1 flex flex-col items-center px-4 sm:px-6 lg:px-12 xl:px-24 pb-24 sm:pb-32 lg:pb-40">
+      <section id="experience" className="flex flex-col mb-16 scroll-mt-20">
+        <h2 className="text-3xl font-bold mb-4 text-white items-center text-center">
           Where I've Worked
         </h2>
-        <h3 className="text-md font-bold mb-4 text-blue-400">
+        <h3 className="text-md font-bold mb-8 text-blue-400 items-center text-center">
           <a href="/">View full resume</a>
         </h3>
         <div className="flex flex-col lg:flex-row gap-2 pt-3">
@@ -62,7 +62,7 @@ export default function Experience() {
           </nav>
 
           {/* Right details */}
-          <div className="flex-1 lg:pl-4 lg:px-72">
+          <div className="flex-1 lg:pl-4 max-w-3xl">
               <h3 className="text-xl font-semibold text-white">
                 {experiences[activeIndex].role}{" "}
                 <span className="text-blue-400">

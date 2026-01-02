@@ -12,14 +12,16 @@ export default function Projects() {
           Do check out here or Github for updates about my ongoing projects!
         </h3>
 
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 relative w-full lg:w-1/2 aspect-video">
-          <Image
-            src="/bidetbuddy.png"
-            alt="BidetBuddy Telegram Bot Preview"
-            width={800}
-            height={800}
-            className="rounded-lg"
-          />
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 w-full lg:flex-1">
+          <div className="w-full lg:flex-1">
+            <Image
+              src="/bidetbuddy.png"
+              alt="BidetBuddy Telegram Bot Preview"
+              width={800}
+              height={800}
+              className="w-full h-auto rounded-lg"
+            />
+          </div>
 
           <div className="flex-1 lg:pl-8 xl:pl-12">
             <h2 className="text-3xl font-bold mb-4 text-violet-400">
