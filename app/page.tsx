@@ -1,6 +1,7 @@
 import About from "./components/About";
 import Experience from "./components/Experience";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 
@@ -25,7 +26,7 @@ export default function Home() {
               href="#about"
               className="px-6 py-3 border-2 border-blue-400 text-blue-400 rounded-lg hover:bg-blue-400 hover:text-gray-900 transition duration-300 font-semibold"
             >
-              View my work
+              View more
             </a>
           </section>
         </main>
@@ -33,6 +34,7 @@ export default function Home() {
         <About />
         <Experience />
         <Projects />
+        <Contact />
       </section>
 
       {/* Footer uses the same full-bleed background color */}

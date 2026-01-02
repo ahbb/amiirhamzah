@@ -36,7 +36,7 @@ export default function Navbar() {
                     <a href="#experience" className="text-gray-300 hover:text-blue-400 transition">Experience</a>
                     <a href="#projects" className="text-gray-300 hover:text-blue-400 transition">Projects</a>
                     <a href="#contact" className="text-gray-300 hover:text-blue-400 transition">Contact</a>
-                    <a href="#resume" className="text-gray-300 hover:text-blue-400 transition">Resume</a>
+                    <a className="text-gray-300 hover:text-blue-400 transition">Resume</a>
                 </div>
             </div>
 
@@ -45,7 +45,7 @@ export default function Navbar() {
                 className={`overflow-hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                     }`}
             >
-                <div className="flex flex-col gap-4 mt-4 pb-4">
+                <div className="flex flex-col gap-4 mt-4 pb-4 pl-4">
                     <a href="#about" className="text-gray-300 hover:text-blue-400 transition" onClick={() => setIsOpen(false)}>About</a>
                     <a href="#experience" className="text-gray-300 hover:text-blue-400 transition" onClick={() => setIsOpen(false)}>Experience</a>
                     <a href="#projects" className="text-gray-300 hover:text-blue-400 transition" onClick={() => setIsOpen(false)}>Projects</a>
