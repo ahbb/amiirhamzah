@@ -27,7 +27,7 @@ export default function Experience() {
 
   return (
     <div className="mx-auto flex-1 flex flex-col items-center justify-between px-4 sm:px-6 lg:px-12 xl:px-24 pb-24 sm:pb-32 lg:pb-40">
-      <section id="experience" className="w-full mb-16 scroll-mt-20">
+      <section id="experience" className="w-full max-w-7xl flex flex-col mb-16 scroll-mt-20">
         <h2 className="text-3xl font-bold mb-4 text-white">
           Where I've Worked
         </h2>
