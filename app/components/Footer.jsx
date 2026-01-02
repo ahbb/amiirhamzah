@@ -3,8 +3,8 @@ import { Linkedin } from 'lucide-react';
 
 export default function Footer() {
     return (
-        <footer className="w-full border-t border-gray-700 bg-gray-900 z-50 fixed bottom-0 left-0 right-0">
-            <div className="max-w-7xl mx-auto px-4 py-8">
+        <footer className="w-full border-t border-gray-700 bg-gray-900">
+            <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                 <div className="flex justify-center items-center gap-6">
                     <a
                         href="https://github.com/ahbb"

@@ -17,8 +17,8 @@ export default function Navbar() {
     }, []);
 
     return (
-        <nav className="fixed top-0 w-full bg-gray-900 bg-opacity-95 backdrop-blur-sm px-6 py-4 shadow-lg z-50">
-            <div className="mx-auto flex justify-end">
+        <nav className="fixed top-0 inset-x-0 bg-gray-900/95 backdrop-blur-sm shadow-lg z-50">
+            <div className="max-w-full mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-end">
 
                 {/* Hamburger Button - visible only on mobile */}
                 <button
@@ -31,7 +31,7 @@ export default function Navbar() {
                 </button>
 
                 {/* Desktop Navigation - hidden on mobile */}
-                <div className="hidden md:flex gap-9">
+                <div className="hidden md:flex gap-8">
                     <a href="#about" className="text-gray-300 hover:text-blue-400 transition">About</a>
                     <a href="#experience" className="text-gray-300 hover:text-blue-400 transition">Experience</a>
                     <a href="#projects" className="text-gray-300 hover:text-blue-400 transition">Projects</a>

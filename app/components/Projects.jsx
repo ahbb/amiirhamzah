@@ -1,19 +1,18 @@
-import { siGithub } from 'simple-icons';
+import { siGithub } from "simple-icons";
 import Image from "next/image";
+import { FaYoutube, FaTelegramPlane } from "react-icons/fa";
 
 export default function Projects() {
   return (
-    <div className="max-w-full flex-1 flex flex-col items-center justify-between pb-48 px-4 lg:px-96">
+    <div className="mx-auto flex-1 flex flex-col items-center justify-between px-4 sm:px-6 lg:px-12 xl:px-24 pb-24 sm:pb-32 lg:pb-40">
       <section id="projects" className="w-full mb-16 scroll-mt-20">
-        <h2 className="text-3xl font-bold mb-4 text-white">
-          Projects
-        </h2>
+        <h2 className="text-3xl font-bold mb-4 text-white">Projects</h2>
 
         <h3 className="text-md mb-4 text-white">
           Do check out here or Github for updates about my ongoing projects!
         </h3>
 
-        <div className="flex flex-col lg:flex-row gap-2 pt-3">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 relative w-full lg:w-1/2 aspect-video">
           <Image
             src="/bidetbuddy.png"
             alt="BidetBuddy Telegram Bot Preview"
@@ -22,28 +21,54 @@ export default function Projects() {
             className="rounded-lg"
           />
 
-          <div className="flex-1 lg:pl-4 lg:px-72">
+          <div className="flex-1 lg:pl-8 xl:pl-12">
             <h2 className="text-3xl font-bold mb-4 text-violet-400">
               Telegram Bot: BidetBuddy
             </h2>
-            <p className="leading-relaxed text-slate-300 pb-8">
-              A Telegram bot that allows users to locate the nearest bidet-equipped toilets in Singapore. Powered by data from <a href="https://linktr.ee/toiletswithbidetsg" target="_blank" className="text-blue-400">toiletswithbidetsg</a> and community contributors.
-            </p>
-            <p className="text-xl text-blue-400 font-bold pb-8"><a href="https://t.me/BidetBuddyBot" target="_blank">Try it out here</a> <span className="text-slate-300"> or search it up on Telegram @BidetBuddyBot.</span></p>
-            
-            <a href="https://github.com/ahbb/ToBi" target="_blank">
-              <svg
-                role="img"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                className="w-6 h-6"
+            <p className=" text-slate-300 pb-4">
+              A Telegram bot that allows users to locate the nearest
+              bidet-equipped toilets in Singapore. Powered by data from{" "}
+              <a
+                href="https://linktr.ee/toiletswithbidetsg"
+                target="_blank"
+                className="text-blue-400"
               >
-                <path d={siGithub.path} />
-              </svg>
+                toiletswithbidetsg
+              </a>{" "}
+              and community contributors.
+            </p>
+
+            <p className="text-blue-400 pb-1 font-bold">Try it out!</p>
+            <a href="https://t.me/BidetBuddyBot" target="_blank">
+            <FaTelegramPlane className="w-6 h-6" />
             </a>
 
-            <div className="flex flex-row gap-3 pt-10 font-mono">
+              <p className="text-slate-300 pb-4">
+                or search it up on Telegram @BidetBuddyBot
+              </p>
+
+            <div className="flex flex-row gap-4">
+              <a href="https://github.com/ahbb/ToBi" target="_blank">
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path d={siGithub.path} />
+                </svg>
+              </a>
+
+              <a
+                href="https://www.youtube.com/shorts/YmVhxuHcuZc"
+                target="_blank"
+              >
+                <FaYoutube className="w-6 h-6" />
+              </a>
+            </div>
+
+            <div className="flex flex-row gap-3 pt-6 font-mono">
               <p>Python</p>
               <p>|</p>
               <p>FastAPI</p>
@@ -51,7 +76,6 @@ export default function Projects() {
               <p>Telegram Bot API</p>
             </div>
           </div>
-
         </div>
       </section>
     </div>

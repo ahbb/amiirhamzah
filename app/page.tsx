@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col font-sans bg-zinc-50 dark:bg-black">
+    <div className="min-h-screen flex flex-col font-sans bg-zinc-50 dark:bg-black overflow-x-hidden">
       <Navbar />
 
       <section className="w-full bg-gray-900 text-gray-100 flex-1">
@@ -20,7 +20,7 @@ export default function Home() {
               I enjoy transforming complex challenges into elegant and intuitive
               solutions.
             </p>
-            
+
             <a
               href="#about"
               className="px-6 py-3 border-2 border-blue-400 text-blue-400 rounded-lg hover:bg-blue-400 hover:text-gray-900 transition duration-300 font-semibold"
@@ -36,11 +36,7 @@ export default function Home() {
       </section>
 
       {/* Footer uses the same full-bleed background color */}
-      <div className="w-full bg-gray-900 text-gray-100">
-        <div className="mx-auto w-full max-w-3xl px-16">
-          <Footer />
-        </div>
-      </div>
+      <Footer />
     </div>
   );
 }
