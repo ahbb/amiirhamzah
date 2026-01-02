@@ -7,7 +7,7 @@ export default function About() {
   return (
     <div className="mx-auto flex-1 flex flex-col items-center justify-between px-4 sm:px-6 lg:px-12 xl:px-24 pb-24 sm:pb-32 lg:pb-40">
       {/* About section */}
-      <div className="w-full">
+      <div className="w-full lg:px-20">
         <section id="about" className="scroll-mt-20">
           <h2 className="text-3xl font-bold mb-4 text-white">
             About
