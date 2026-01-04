@@ -32,7 +32,7 @@ export default function Experience() {
           Where I've Worked
         </h2>
         <h3 className="text-md font-bold mb-8 text-blue-400 items-center text-center">
-          <a href="/">View full resume</a>
+          <a href="/AmiirBakriResume.pdf" target="_blank">View full resume</a>
         </h3>
         <div className="flex flex-col lg:flex-row gap-2 pt-3">
           {/* Left tabs */}

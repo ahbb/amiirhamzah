@@ -36,7 +36,7 @@ export default function Navbar() {
                     <a href="#experience" className="text-gray-300 hover:text-blue-400 transition">Experience</a>
                     <a href="#projects" className="text-gray-300 hover:text-blue-400 transition">Projects</a>
                     <a href="#contact" className="text-gray-300 hover:text-blue-400 transition">Contact</a>
-                    <a className="text-gray-300 hover:text-blue-400 transition">Resume</a>
+                    <a href="/AmiirBakriResume.pdf" target="_blank" className="text-gray-300 hover:text-blue-400 transition">Resume</a>
                 </div>
             </div>
 
