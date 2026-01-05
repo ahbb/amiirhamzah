@@ -5,13 +5,17 @@ import { FaYoutube, FaTelegramPlane } from "react-icons/fa";
 export default function Projects() {
   return (
     <div className="mx-auto flex-1 flex flex-col items-center justify-between px-4 sm:px-6 lg:px-12 xl:px-24 pb-24 sm:pb-32 lg:pb-40">
-      <section id="projects" className="w-full max-w-7xl flex flex-col mb-16 scroll-mt-20">
+      <section
+        id="projects"
+        className="w-full max-w-7xl flex flex-col mb-16 scroll-mt-20"
+      >
         <h2 className="text-3xl font-bold mb-4 text-white">Projects</h2>
 
         <h3 className="text-md mb-4 text-white">
           Do check out here or Github for updates about my ongoing projects!
         </h3>
 
+        {/* BidetBuddyBot */}
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 w-full lg:flex-1">
           <div className="w-full lg:flex-1">
             <Image
@@ -42,12 +46,12 @@ export default function Projects() {
 
             <p className="text-blue-400 pb-1 font-bold">Try it out!</p>
             <a href="https://t.me/BidetBuddyBot" target="_blank">
-            <FaTelegramPlane className="w-6 h-6" />
+              <FaTelegramPlane className="w-6 h-6" />
             </a>
 
-              <p className="text-slate-300 pb-4">
-                or search it up on Telegram @BidetBuddyBot
-              </p>
+            <p className="text-slate-300 pb-4">
+              or search it up on Telegram @BidetBuddyBot
+            </p>
 
             <div className="flex flex-row gap-4">
               <a href="https://github.com/ahbb/ToBi" target="_blank">
@@ -77,6 +81,24 @@ export default function Projects() {
               <p>|</p>
               <p>Telegram Bot API</p>
             </div>
+          </div>
+        </div>
+
+        {/* Bus Planner */}
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 w-full lg:flex-1 pt-24">
+          <div className="w-full lg:flex-1">
+            <h2 className="text-3xl font-bold mb-4 text-violet-400">
+              Bus Planner (Coming soon)
+            </h2>
+            <p className=" text-slate-300 pb-4">
+              An app that allows users to compare bus arrivals at different bus
+              stops to decide which one to take. This tackles a pretty niche use
+              case, as I&apos;m initially building this for my own convenience.
+            </p>
+          </div>
+
+          <div className="flex-1 lg:pl-8 xl:pl-12">
+            {/* App image */}
           </div>
         </div>
       </section>
