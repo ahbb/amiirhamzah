@@ -11,9 +11,9 @@ export default function Projects() {
       >
         <h2 className="text-3xl font-bold mb-4 text-white">Projects</h2>
 
-        <h3 className="text-md mb-4 text-white">
+        {/* <h3 className="text-md mb-4 text-white">
           Do check out here or Github for updates about my ongoing projects!
-        </h3>
+        </h3> */}
 
         {/* BidetBuddyBot */}
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 w-full lg:flex-1">
@@ -27,6 +27,7 @@ export default function Projects() {
             />
           </div>
 
+          {/* Project info */}
           <div className="flex-1 lg:pl-8 xl:pl-12">
             <h2 className="text-3xl font-bold mb-4 text-violet-400">
               Telegram Bot: BidetBuddy
@@ -80,25 +81,74 @@ export default function Projects() {
               <p>FastAPI</p>
               <p>|</p>
               <p>Telegram Bot API</p>
+              <p>|</p>
+              <p>Render</p>
             </div>
           </div>
         </div>
 
+
+
         {/* Bus Planner */}
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 w-full lg:flex-1 pt-24">
+        <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 w-full lg:flex-1 pt-40">
+
+          {/* Project info */}
           <div className="w-full lg:flex-1">
             <h2 className="text-3xl font-bold mb-4 text-violet-400">
-              Bus Planner (Coming soon)
+              Bus Planner
             </h2>
             <p className=" text-slate-300 pb-4">
-              An app that allows users to compare bus arrivals at different bus
-              stops to decide which one to take. This tackles a pretty niche use
-              case, as I&apos;m initially building this for my own convenience.
+              An app that allows users to select several bus services from different bus stops and view estimated arrival timings in order. I&apos;m initially just building this for my own convenience, and may add features as I go along.
             </p>
-          </div>
 
+            {/* Links to github and youtube */}
+            <div className="flex flex-row gap-4">
+              <a href="https://github.com/ahbb/sg-bus-planner" target="_blank">
+                <svg
+                  role="img"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  className="w-6 h-6"
+                >
+                  <path d={siGithub.path} />
+                </svg>
+              </a>
+
+              {/* TODO: Youtube link here */}
+              
+            </div>
+
+            <div className="flex flex-row gap-3 pt-6 font-mono">
+              <p>React Native</p>
+              <p>|</p>
+              <p>FastAPI</p>
+              <p>|</p>
+              <p>Render</p>
+              <p>|</p>
+              <p>Expo</p>
+            </div>
+            
+          </div>
+          
           <div className="flex-1 lg:pl-8 xl:pl-12">
-            {/* App image */}
+            <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 w-full lg:flex-1">
+              {/* App image */}
+              <Image
+                src="/bus-planner1.jpg"
+                alt="Bus Planner 1"
+                width={250}
+                height={250}
+                className="rounded-lg"
+              />
+              <Image
+                src="/bus-planner2.jpg"
+                alt="Bus Planner 1"
+                width={250}
+                height={250}
+                className="rounded-lg"
+              />
+            </div>
           </div>
         </div>
       </section>
