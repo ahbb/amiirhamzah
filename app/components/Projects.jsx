@@ -98,7 +98,7 @@ export default function Projects() {
               Bus Planner
             </h2>
             <p className=" text-slate-300 pb-4">
-              An app that allows users to select several bus services from different bus stops and view estimated arrival timings in order. I&apos;m initially just building this for my own convenience, and may add features as I go along.
+              An app that allows users to select several bus services from different bus stops and view their estimated arrival timings in sequence. I&apos;m initially building this for personal use and may add features over time. Bus arrival timings are are retrieved via <a href="https://datamall.lta.gov.sg/content/datamall/en/dynamic-data.html" target="_blank" className="text-blue-400">LTA APIs.</a>
             </p>
 
             {/* Links to github and youtube */}
@@ -116,7 +116,7 @@ export default function Projects() {
               </a>
 
               {/* TODO: Youtube link here */}
-              
+
             </div>
 
             <div className="flex flex-row gap-3 pt-6 font-mono">
@@ -124,11 +124,13 @@ export default function Projects() {
               <p>|</p>
               <p>FastAPI</p>
               <p>|</p>
+              <p>LTA API</p>
+              <p>|</p>
               <p>Render</p>
               <p>|</p>
               <p>Expo</p>
             </div>
-            
+
           </div>
           
           <div className="flex-1 lg:pl-8 xl:pl-12">
