@@ -87,18 +87,26 @@ export default function Projects() {
           </div>
         </div>
 
-
-
         {/* Bus Planner */}
         <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 w-full lg:flex-1 pt-40">
-
           {/* Project info */}
           <div className="w-full lg:flex-1">
             <h2 className="text-3xl font-bold mb-4 text-violet-400">
               Bus Planner
             </h2>
             <p className=" text-slate-300 pb-4">
-              An app that allows users to select several bus services from different bus stops and view their estimated arrival timings in sequence. I&apos;m initially building this for personal use and may add features over time. Bus arrival timings are are retrieved via <a href="https://datamall.lta.gov.sg/content/datamall/en/dynamic-data.html" target="_blank" className="text-blue-400">LTA APIs.</a>
+              An app that allows users to select several bus services from
+              different bus stops and view their estimated arrival timings in
+              sequence. I&apos;m initially building this for personal use and
+              may add features over time. Bus arrival timings and bus services
+              are retrieved via{" "}
+              <a
+                href="https://datamall.lta.gov.sg/content/datamall/en/dynamic-data.html"
+                target="_blank"
+                className="text-blue-400"
+              >
+                LTA APIs.
+              </a>
             </p>
 
             {/* Links to github and youtube */}
@@ -115,8 +123,12 @@ export default function Projects() {
                 </svg>
               </a>
 
-              {/* TODO: Youtube link here */}
-
+              <a
+                href="https://youtube.com/shorts/m4i49cwdN6Q?feature=share"
+                target="_blank"
+              >
+                <FaYoutube className="w-6 h-6" />
+              </a>
             </div>
 
             <div className="flex flex-row gap-3 pt-6 font-mono">
@@ -130,9 +142,8 @@ export default function Projects() {
               <p>|</p>
               <p>Expo</p>
             </div>
-
           </div>
-          
+
           <div className="flex-1 lg:pl-8 xl:pl-12">
             <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 w-full lg:flex-1">
               {/* App image */}
